@@ -1,0 +1,71 @@
+vagrant@ubuntu-bionic:~$ pwd
+/home/vagrant
+vagrant@ubuntu-bionic:~$ mkdir my_folder
+vagrant@ubuntu-bionic:~$ ls
+editor  my_folder
+vagrant@ubuntu-bionic:~$ cd my_folder
+vagrant@ubuntu-bionic:~/my_folder$ touch myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ ls
+myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ cat myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ vim myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ vagrant@ubuntu-bionic:~/my_folder$ cat myfile.txt
+This is my first line
+
+this is the first file
+vagrant@ubuntu-bionic:~/my_folder$ vim myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ vagrant@ubuntu-bionic:~/my_folder$ cat myfile.txt
+This is my first line
+
+this is the first file
+
+hi
+vagrant@ubuntu-bionic:~/my_folder$ touch another-file.txt
+vagrant@ubuntu-bionic:~/my_folder$ vim another-file.txt
+vagrant@ubuntu-bionic:~/my_folder$ vagrant@ubuntu-bionic:~/my_folder$ cat another-file.txt
+this is the another file
+
+this is the second line
+vagrant@ubuntu-bionic:~/my_folder$ ls
+another-file.txt  myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ cat another-file.txt >> myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ cat myfile.txt
+This is my first line
+
+this is the first file
+
+hi
+this is the another file
+
+this is the second line
+vagrant@ubuntu-bionic:~/my_folder$ cat another-file.txt
+this is the another file
+
+this is the second line
+vagrant@ubuntu-bionic:~/my_folder$ ls
+another-file.txt  myfile.txt
+vagrant@ubuntu-bionic:~/my_folder$ touch file-{1..20}.txt
+vagrant@ubuntu-bionic:~/my_folder$ ls
+another-file.txt  file-11.txt  file-14.txt  file-17.txt  file-2.txt   file-4.txt  file-7.txt  myfile.txt
+file-1.txt        file-12.txt  file-15.txt  file-18.txt  file-20.txt  file-5.txt  file-8.txt
+file-10.txt       file-13.txt  file-16.txt  file-19.txt  file-3.txt   file-6.txt  file-9.txt
+vagrant@ubuntu-bionic:~/my_folder$ pwd
+/home/vagrant/my_folder
+vagrant@ubuntu-bionic:~/my_folder$ ls
+another-file.txt  file-11.txt  file-14.txt  file-17.txt  file-2.txt   file-4.txt  file-7.txt  myfile.txt
+file-1.txt        file-12.txt  file-15.txt  file-18.txt  file-20.txt  file-5.txt  file-8.txt
+file-10.txt       file-13.txt  file-16.txt  file-19.txt  file-3.txt   file-6.txt  file-9.txt
+vagrant@ubuntu-bionic:~/my_folder$ ls
+another-file.txt  file-11.txt  file-14.txt  file-17.txt  file-2.txt   file-4.txt  file-7.txt  myfile.txt
+file-1.txt        file-12.txt  file-15.txt  file-18.txt  file-20.txt  file-5.txt  file-8.txt
+file-10.txt       file-13.txt  file-16.txt  file-19.txt  file-3.txt   file-6.txt  file-9.txt
+vagrant@ubuntu-bionic:~/my_folder$ mv file-{1..5}.txt   file-{1..5}.yml
+mv: target 'file-5.yml' is not a directory
+vagrant@ubuntu-bionic:~/my_folder$ mv file-{1..5}.txt file-{1..5}.yml
+mv: target 'file-5.yml' is not a directory
+vagrant@ubuntu-bionic:~/my_folder$ ls -rt | head -n 5
+another-file.txt
+myfile.txt
+file-9.txt
+file-8.txt
+file-7.txt
